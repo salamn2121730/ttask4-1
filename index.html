@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+        const array = Array.from({ length: 10 }, () => Math.floor(Math.random() * 10));
+        var x = 0;
+        var y = 0;
+        
+        document.write(array);
+        document.write('</br>');
+        for (var index = 0; index <= array.length; index++) {
+            if (array[index] % 2 == 0) {
+                x += array[index];
+
+            }
+        }
+        console.log(x);
+        document.write(x);
+        document.write('</br>');
+
+        for (var index = 0; index < 5; index++) {
+            y += array[index];
+        }
+        console.log(y);
+        document.write(y);
+        document.write('</br>');
+
+
+        var object = {
+            name: 'salam',
+            number: 2,
+            age: 26,
+            email: 'salam.njee@gmail.com' , 
+        }
+        document.write(object); 
+        document.write('</br>');
+
+       
+        console.log(object);
+        
+            console.log(object.name);
+            console.log(object.number);
+            console.log(object.age);
+            console.log(object.email);
+
+            document.write(object.name);
+            document.write(object.number);
+            document.write(object.age);
+            document.write(object.email);
+
+    </script>
+</body>
+
+</html>
